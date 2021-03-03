@@ -53,7 +53,20 @@ int peek(Stack* stack)
 
 int main()
 {
+    Stack* stack = createStack(100);
 
+    push(stack, 10);
+    push(stack, 20);
+    push(stack, 30);
+    push(stack, 40);
 
+    printf("%d pop from stack\n", pop(stack));
+    printf("%d pop from stack\n", pop(stack));
+
+    push(stack, 50);
+    printf("%d pop from stack\n", pop(stack));
+    printf("%d pop from stack\n", pop(stack));
+    printf("%d pop from stack\n", pop(stack));
+    printf("%d pop from stack\n", pop(stack));
     return 0;
 }
