@@ -35,6 +35,14 @@ void push(Stack* stack, int item)
     printf("%d pushed to stack\n", item);
 }
 
+int pop(Stack* stack) 
+{
+    if (isEmpty(stack))
+        return -9999;
+    return stack -> array[stack -> top--];
+}
+
+
 
 int main()
 {
