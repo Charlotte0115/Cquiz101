@@ -42,6 +42,13 @@ int pop(Stack* stack)
     return stack -> array[stack -> top--];
 }
 
+int peek(Stack* stack) 
+{
+    if(isEmpty(stack))
+        return -9999;
+    return stack -> array[stack -> top];
+}
+
 
 
 int main()
