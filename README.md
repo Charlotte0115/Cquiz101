@@ -17,6 +17,13 @@ Stack* createStack(int capacity)
     return stack;
 }
 
+int isFull(Stack* stack) 
+{
+    return stack->top == stack->capacity-1;
+}
+
+
+
 int main()
 {
 
