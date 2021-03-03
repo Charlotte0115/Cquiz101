@@ -27,6 +27,13 @@ int isEmpty(Stack* stack)
     return stack->top == -1;
 }
 
+void push(Stack* stack, int item) 
+{
+    if (isFull(stack)) 
+        return;
+    stack->array[++stack->top] = item;
+    printf("%d pushed to stack\n", item);
+}
 
 
 int main()
